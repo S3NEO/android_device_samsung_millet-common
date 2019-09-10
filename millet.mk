@@ -90,6 +90,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libshim_binder \
     libshim_sr130pc20
 
 # Shipping API level
