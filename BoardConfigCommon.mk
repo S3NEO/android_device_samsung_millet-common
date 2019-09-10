@@ -104,6 +104,7 @@ TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
+    /system/vendor/lib/libperipheral_client.so|libshim_binder.so \
     /system/vendor/lib/libmmcamera_sr130pc20.so|libshim_sr130pc20.so
 
 # inherit from the proprietary version
