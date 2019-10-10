@@ -46,44 +46,44 @@ void vendor_load_properties()
         /* milletwifixx */
         property_override("ro.build.description", "milletwifixx-user 5.1.1 LMY47X T330XXS1BSB1 release-keys");
         set_ro_product_prop("device", "milletwifi");
-        set_ro_product_prop("fingerprint", "samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:user/release-keys");
+        set_ro_build_prop("fingerprint", "samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:user/release-keys");
         set_ro_product_prop("model", "SM-T330");
         set_ro_product_prop("name", "milletwifi");
-        wifi_properties();
+        wifi_properties("wifi-only", "1");
     } else if (bootloader.find("T330NU") == 0) {
         /* milletwifiue */
         property_override("ro.build.description", "milletwifiue-user 5.1.1 LMY47X T330NUUES1BPL1 release-keys");
         set_ro_product_prop("device", "milletwifiue");
-        set_ro_product_prop("fingerprint", "samsung/milletwifiue/milletwifiue:5.1.1/LMY47X/T330NUUES1BPL1:user/release-keys");
+        set_ro_build_prop("fingerprint", "samsung/milletwifiue/milletwifiue:5.1.1/LMY47X/T330NUUES1BPL1:user/release-keys");
         set_ro_product_prop("model", "SM-T330NU");
         set_ro_product_prop("name", "milletwifiue");
-        wifi_properties();
+        wifi_properties("wifi-only", "1");
     } else if (bootloader.find("T331XX") == 0) {
         /* millet3g */
         property_override("ro.build.description", "millet3gxx-user 5.1.1 LMY47X T331XXS1BSA2 release-keys");
         set_ro_product_prop("device", "millet3g");
-        set_ro_product_prop("fingerprint", "samsung/millet3gxx/millet3g:5.1.1/LMY47X/T331XXS1BSA2:user/release-keys");
+        set_ro_build_prop("fingerprint", "samsung/millet3gxx/millet3g:5.1.1/LMY47X/T331XXS1BSA2:user/release-keys");
         set_ro_product_prop("model", "SM-T331");
         set_ro_product_prop("name", "millet3g");
-        gsm_properties();
+        gsm_properties("3", "0");
     } else if (bootloader.find("T335XX") == 0) {
         /* milletltexx */
         property_override("ro.build.description", "milletltexx-user 5.1.1 LMY47X T335XXS1BRL3 release-keys");
         set_ro_product_prop("device", "milletlte");
-        set_ro_product_prop("fingerprint", "samsung/milletltexx/milletlte:5.1.1/LMY47X/T335XXS1BRL3:user/release-keys");
+        set_ro_build_prop("fingerprint", "samsung/milletltexx/milletlte:5.1.1/LMY47X/T335XXS1BRL3:user/release-keys");
         set_ro_product_prop("model", "SM-T335");
         set_ro_product_prop("name", "milletlte");
-        lte_properties();
+        gsm_properties("9", "1");
     } else if (bootloader.find("T337T") == 0) {
         /* milletltetmo */
         property_override("ro.build.description", "milletltetmo-user 5.1.1 LMY47X T337TUVS1CPL1 release-keys");
-        set_ro_product_prop("device", "milletltetmo");
-        set_ro_product_prop("fingerprint", "samsung/milletltetmo/milletltetmo:5.1.1/LMY47X/T337TUVS1CPL1:user/release-keys");
+        set_ro_product_prop("name", "milletltetmo");
+        set_ro_build_prop("fingerprint", "samsung/milletltetmo/milletltetmo:5.1.1/LMY47X/T337TUVS1CPL1:user/release-keys");
         set_ro_product_prop("model", "SM-T337T");
         set_ro_product_prop("name", "milletltetmo");
-        lte_properties();
+        gsm_properties("9", "1");
     } else {
-        wifi_properties();
+        wifi_properties("wifi-only", "1");
     }
 
     std::string device = GetProperty("ro.product.device", "");
