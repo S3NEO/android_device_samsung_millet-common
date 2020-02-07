@@ -15,10 +15,5 @@
 #
 
 # Board specific SELinux policy variable definitions
-ifeq ($(CONFIG_MILLET_COMMON_SEPOLICY_TYPE), temporary)
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/millet-common/sepolicy/temporary
-else
 BOARD_SEPOLICY_DIRS += \
     device/samsung/millet-common/sepolicy/common
-endif
