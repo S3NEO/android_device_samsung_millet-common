@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2012 The Android Open Source Project
  * Copyright (C) 2012 The CyanogenMod Project <http://www.cyanogenmod.org>
@@ -19,7 +18,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy Tab 4 8.1"
+#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy Tab 4 8.0"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
 #define BTM_WBS_INCLUDED TRUE       /* Enable WBS */
