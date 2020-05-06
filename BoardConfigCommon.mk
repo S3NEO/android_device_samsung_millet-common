@@ -54,6 +54,10 @@ TARGET_EXFAT_DRIVER := sdfat
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_matisse
+TARGET_RECOVERY_DEVICE_MODULES := libinit_matisse
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37 zcache.enabled=1 zcache.compressor=lz4
