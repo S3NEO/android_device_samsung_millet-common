@@ -108,8 +108,5 @@ include $(COMMON_PATH)/sepolicy/sepolicy.mk
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
-# Use Snapdragon LLVM if available on build server
-TARGET_USE_SDCLANG := true
-
 # inherit from the proprietary version
 -include vendor/samsung/millet-common/BoardConfigVendor.mk
