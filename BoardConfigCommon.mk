@@ -37,6 +37,9 @@ BLOCK_BASED_OTA := true
 # Build Fingerprint
 BUILD_FINGERPRINT := samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:user/release-keys
 
+# Camera
+TARGET_NEEDS_TEXT_RELOCATIONS := true
+
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
