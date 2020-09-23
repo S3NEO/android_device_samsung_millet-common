@@ -49,36 +49,41 @@ void vendor_load_properties()
     if (bootloader.find("T330XX") == 0) {
         /* milletwifixx */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:user/release-keys");
+        property_override("ro.bootimage.build.fingerprint", "samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:user/release-keys");
         property_override_dual("ro.build.description", "ro.vendor.build.description", "milletwifixx-user 5.1.1 LMY47X T330XXS1BSB1 release-keys");
-        property_override("ro.product.model", "SM-T330");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-T330");
         property_override_dual("ro.product.device", "ro.vendor.device", "milletwifi");
         wifi_properties("wifi-only", "1");
     } else if (bootloader.find("T330NU") == 0) {
         /* milletwifiue */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/milletwifiue/milletwifiue:5.1.1/LMY47X/T330NUUES1BPL1:user/release-keys");
+        property_override("ro.bootimage.build.fingerprint", "samsung/milletwifiue/milletwifiue:5.1.1/LMY47X/T330NUUES1BPL1:user/release-keys");
         property_override_dual("ro.build.description", "ro.vendor.build.description", "milletwifiue-user 5.1.1 LMY47X T330NUUES1BPL1 release-keys");
-        property_override("ro.product.model", "SM-T330NU");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-T330NU");
         property_override_dual("ro.product.device", "ro.vendor.device", "milletwifiue");
         wifi_properties("wifi-only", "1");
     } else if (bootloader.find("T331XX") == 0) {
         /* millet3g */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/millet3gxx/millet3g:5.1.1/LMY47X/T331XXS1BSA2:user/release-keys");
+        property_override("ro.bootimage.build.fingerprint", "samsung/millet3gxx/millet3g:5.1.1/LMY47X/T331XXS1BSA2:user/release-keys");
         property_override_dual("ro.build.description", "ro.vendor.build.description", "millet3gxx-user 5.1.1 LMY47X T331XXS1BSA2 release-keys");
-        property_override("ro.product.model", "SM-T331");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-T331");
         property_override_dual("ro.product.device", "ro.vendor.device", "millet3g");
         gsm_properties("3", "0");
     } else if (bootloader.find("T335XX") == 0) {
         /* milletltexx */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/milletltexx/milletlte:5.1.1/LMY47X/T335XXS1BRL3:user/release-keys");
+        property_override("ro.bootimage.build.fingerprint", "samsung/milletltexx/milletlte:5.1.1/LMY47X/T335XXS1BRL3:user/release-keys");
         property_override_dual("ro.build.description", "ro.vendor.build.description", "milletltexx-user 5.1.1 LMY47X T335XXS1BRL3 release-keys");
-        property_override("ro.product.model", "SM-T335");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-T335");
         property_override_dual("ro.product.device", "ro.vendor.device", "milletlte");
         gsm_properties("9", "1");
     } else if (bootloader.find("T337T") == 0) {
         /* milletltetmo */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/milletltetmo/milletltetmo:5.1.1/LMY47X/T337TUVS1CPL1:user/release-keys");
+        property_override("ro.bootimage.build.fingerprint", "samsung/milletltetmo/milletltetmo:5.1.1/LMY47X/T337TUVS1CPL1:user/release-keys");
         property_override_dual("ro.build.description", "ro.vendor.build.description", "milletltetmo-user 5.1.1 LMY47X T337TUVS1CPL1 release-keys");
-        property_override("ro.product.model", "SM-T337T");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-T337T");
         property_override_dual("ro.product.device", "ro.vendor.device", "milletltetmo");
         gsm_properties("9", "1");
     } else {
