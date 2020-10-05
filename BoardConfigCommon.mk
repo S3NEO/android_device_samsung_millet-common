@@ -40,6 +40,10 @@ BUILD_FINGERPRINT := samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:u
 # Camera
 TARGET_NEEDS_TEXT_RELOCATIONS := true
 
+# Charger
+BOARD_NO_CHARGER_LED := true
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
@@ -48,7 +52,7 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 zcache.enabled=1 zcache.compressor=lz4
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37 zcache.enabled=1 zcache.compressor=lz4
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
