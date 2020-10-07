@@ -1,0 +1,2 @@
+allow healthd proc_last_kmsg:file r_file_perms;
+dontaudit healthd self:capability dac_override;
