@@ -37,9 +37,6 @@ BLOCK_BASED_OTA := true
 # Build Fingerprint
 BUILD_FINGERPRINT := samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:user/release-keys
 
-# Camera
-TARGET_NEEDS_TEXT_RELOCATIONS := true
-
 # Charger
 BOARD_NO_CHARGER_LED := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
