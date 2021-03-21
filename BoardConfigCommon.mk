@@ -41,9 +41,6 @@ BLOCK_BASED_OTA := true
 # Build Fingerprint
 BUILD_FINGERPRINT := samsung/milletwifixx/milletwifi:5.1.1/LMY47X/T330XXS1BSB1:user/release-keys
 
-# Camera
-TARGET_NEEDS_TEXT_RELOCATIONS := true
-
 # Charger
 BOARD_NO_CHARGER_LED := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
@@ -70,7 +67,6 @@ LZMA_RAMDISK_TARGETS := recovery
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
 
 # Legacy BLOB Support
-TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=22 \
     /system/vendor/bin/mm-qcamera-daemon=22 \
