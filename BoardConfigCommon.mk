@@ -55,8 +55,7 @@ TARGET_EXFAT_DRIVER := sdfat
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_matisse
-TARGET_RECOVERY_DEVICE_MODULES := libinit_matisse
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_millet
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -75,10 +74,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=22 \
     /system/vendor/bin/mm-qcamera-daemon=22 \
     /system/vendor/bin/hw/rild=27
-
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_millet
-TARGET_RECOVERY_DEVICE_MODULES := libinit_millet
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
